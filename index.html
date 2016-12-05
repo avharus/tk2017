@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dutch Elections 2017</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css">
+  </head>
+  
+  <style>
+    p, ul li {
+      font-size: 1.3em;
+    }
+  </style>
+  
+  <body>
+    <div class="navbar navbar-inverse navbar-static top">
+      <div class="container">
+        <div class="navbar-header">
+          <a style="font-size: 1.5em" href="#" class="navbar-brand">TK2017</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="elections.html">Elections</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+    <div class="jumbotron" style="background-color: #e3f2fd">
+      <div class="container">
+        <h1 class="display-3">Dutch Elections 2017</h1>
+        <h2 style="font-size:1.6em" class="lead">A website designed to guide potential voters in their search for a political party that suits them best</h2>
+        <p><a id="elecbtn" href="elections.html" class="btn btn-lg">Learn more about the elections &raquo;</a></p>
+      </div>
+    </div>
+
+    <!-- container -->
+    <div class="container">
+      <div class="page-header">
+        <h1>Political parties</h1>
+      </div>
+
+      <!-- first row -->
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <h2><img width="72" height="72" src="http://www.a28fm.nl/wp-content/uploads/2016/07/cda-logo.png"/></h2>
+          <p>Christen-Democratisch appèl is a right-wing conservative party.</p>
+          <p id="cdatext" style="display:none">The CDA is concerned with Christian values such as solidarity.</p>
+          <a id="cdasocial" style="display:none" href="https://www.facebook.com/kiesCDA/" class="btn btn-social-icon btn-facebook" target="_blank">
+            <span class="fa fa-facebook"></span>
+          </a>
+          <p><button id="cdabtn" data-textId="cdatext" data-socialId="cdasocial" class="btn btn-info">Read more <span class="caret"></span></button></p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <h2><img width="240" height="32" src="https://www.christenunie.nl/l/library/download/980263?ext=.png"/></h2>
+          <p>ChristenUnie is a right-wing conservative party. </p>
+          <p id="cutext" style="display:none">ChristenUnie is focused on pursuing Christian values.</p>
+          <a id="cusocial" style="display:none" href="https://www.facebook.com/christenunie/" class="btn btn-social-icon btn-facebook" target="_blank">
+            <span class="fa fa-facebook"></span>
+          </a>
+          <p><button id="cubtn" data-textId="cutext" data-socialId="cusocial" class="btn btn-info">Read more <span class="caret"></span></button></p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <h2><img width="108" height="60" src="https://vlaardingen.d66.nl/content/uploads/sites/255/2014/01/logo1.jpg"/></h2>
+          <p>Democraten 66 is a right-wing progressive party.</p>
+          <p id="d66text" style="display:none">D66 is a party that is concerned with education. D66 also wants to achieve a stronger Europe.</p>
+          <a id="d66social" style="display:none" href="https://www.facebook.com/D66/" class="btn btn-social-icon btn-facebook" target="_blank">
+            <span class="fa fa-facebook"></span>
+          </a>
+          <p><button id="d66btn" data-textId="d66text" data-socialId="d66social" class="btn btn-info">Read more <span class="caret"></span></button></p>
+        </div>
+      </div>
+      <!-- second row -->
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <h2><img width="240" height="32" src="https://groenlinks.nl/sites/default/files/Weblogo%202000px.jpg"/></h2>
+          <p>GroenLinks is a left-wing progressive party.</p>
+          <p id="gltext" style="display:none">GroenLinks is greatly concerned with increasing the quality of education.</p>
+          <a id="glsocial" style="display:none" href="https://www.facebook.com/groenlinks/" class="btn btn-social-icon btn-facebook" target="_blank">
+            <span class="fa fa-facebook"></span>
+          </a>
+          <p><button id="glbtn" data-textId="gltext" data-socialId="glsocial" class="btn btn-info">Read more <span class="caret"></span></button></p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <h2><img width="108" height="60" src="http://www.nederweert24.nl/wp-content/uploads/2015/04/pvda-logo.jpg"/></h2>
+          <p>Partij van de Arbeid is a left-wing progressive party.</p>
+          <p id="pvdatext" style="display:none">The PvdA focused on increasing the quality of life of the lower class population.</p>
+          <a id="pvdasocial" style="display:none" href="https://www.facebook.com/PartijvandeArbeid/" class="btn btn-social-icon btn-facebook" target="_blank">
+            <span class="fa fa-facebook"></span>
+          </a>
+          <p><button id="pvdabtn" data-textId="pvdatext" data-socialId="pvdasocial" class="btn btn-info">Read more <span class="caret"></span></button></p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <h2><img width="72" height="72" src="https://afdelingzuidholland.partijvoordedieren.nl/img/content/afdelingzuidholland/2013/11/1383465592_1383211614_Logo_f.c._C-papier.jpg"/></h2>
+          <p>Partij voor de Dieren is a left-wing progressive party.</p>
+          <p id="pvddtext" style="display:none">The PvdD is very focused on defending and strengthening animal rights.</p>
+          <a id="pvddsocial" style="display:none" href="https://www.facebook.com/PartijvoordeDieren/" class="btn btn-social-icon btn-facebook" target="_blank">
+            <span class="fa fa-facebook"></span>
+          </a>
+          <p><button id="pvddbtn" data-textId="pvddtext" data-socialId="pvddsocial" class="btn btn-info">Read more <span class="caret"></span></button></p>
+        </div>
+      </div>
+      <!-- third row -->
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <h2><img width="240" height="50" src="http://publiekezaken.eu/wp-content/uploads/2016/09/logo_pvv.png"/></h2>
+          <p>Partij voor de Vrijheid is a conservative party that is neither right-wing nor left-wing.</p>
+          <p id="pvvtext" style="display:none">The PVV is concerned with defeating threats of terrorism.</p>
+          <p><button id="pvvbtn" data-textId="pvvtext" class="btn btn-info">Read more <span class="caret"></span></button></p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <h2><img width="72" height="72" src="http://www.cip.nl/images/2015b/sgpoud.jpg"/></h2>
+          <p>Staatkundig Gereformeerde Partij is a very conservative right-wing party.</p>
+          <p id="sgptext" style="display:none">The SGP is very focused on pursuing Christian values.</p>
+          <a id="sgpsocial" style="display:none" href="https://www.facebook.com/SGPnieuws/" class="btn btn-social-icon btn-facebook" target="_blank">
+            <span class="fa fa-facebook"></span>
+          </a>
+          <p><button id="sgpbtn" data-textId="sgptext" data-socialId="sgpsocial" class="btn btn-info">Read more <span class="caret"></span></button></p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <h2><img width="72" height="40" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/SP_nl_logo_2006.svg/200px-SP_nl_logo_2006.svg.png"/></h2>
+          <p>Socialistische Partij is a progressive left-wing party.</p>
+          <p id="sptext" style="display:none">The SP is focused on increasing quality of life of lower class citizens.</p>
+          <a id="spsocial" style="display:none" href="https://www.facebook.com/SocialistischePartij/" class="btn btn-social-icon btn-facebook" target="_blank">
+            <span class="fa fa-facebook"></span>
+          </a>
+          <p><button id="spbtn" data-textId="sptext" data-socialId="spsocial" class="btn btn-info">Read more <span class="caret"></span></button></p>
+        </div>
+      </div>
+      <!-- fourth row -->
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <h2><img width="72" height="72" src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Vvd_logo_groot_in_jpg_format.jpg"/></h2>
+          <p>Volkspartij voor Vrijheid en Democratie is a progressive right-wing party.</p>
+          <p id="vvdtext" style="display:none">The VVD focuses heavily on increasing the quality of life of higher class citizens.</p>
+          <a id="vvdsocial" style="display:none" href="https://www.facebook.com/VVD/" class="btn btn-social-icon btn-facebook" target="_blank">
+            <span class="fa fa-facebook"></span>
+          </a>
+          <p><button id="vvdbtn" data-textId="vvdtext" data-socialId="vvdsocial" class="btn btn-info">Read more <span class="caret"></span></button></p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <h2><img width="72" height="72" src="https://upload.wikimedia.org/wikipedia/commons/1/1f/50plus.svg"/></h2>
+          <p>50plus is a progressive left-wing party..</p>
+          <p id="50plustext" style="display:none">50plus is focused on increasing the quality of life of elderly citizens.</p>
+          <a id="50plussocial" style="display:none" href="https://www.facebook.com/50plus-partij-347623668624706/" class="btn btn-social-icon btn-facebook" target="_blank">
+            <span class="fa fa-facebook"></span>
+          </a>
+          <p><button id="50plusbtn" data-textId="50plustext" data-socialId="50plussocial" class="btn btn-info">Read more <span class="caret"></span></button></p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <h2>And more...</h2>
+          <p>There are many small parties that currently have no seats in the Tweede Kamer.</p>
+          <p id="moretext" style="display:none">One such party is the PiratenPartij.</p>
+          <p><button id="morebtn" data-textId="moretext" class="btn btn-info">Read more <span class="caret"></span></button></p>
+        </div>
+      </div>
+    <!-- end of container -->
+    </div>
+
+  <div class="container">
+  <hr>
+  <footer>
+    <p style="text-align:right">2ID60 Eindhoven University of Technology</p>
+  </footer>
+  </div>
+  
+  </body>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  
+  </html>
+
+
